@@ -44,6 +44,7 @@ var server = http.createServer(function (req, res) {
             if(!exists) {
                 send404(res);
                 return;
+
             };
 
             res.writeHead(200, { 'content-type': mimeType });
